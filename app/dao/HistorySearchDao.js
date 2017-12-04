@@ -1,5 +1,4 @@
 /**
- * Created by hisign on 2017/5/25.
  * 快递查询历史
  */
 import React, {Component} from "react";

@@ -1,5 +1,4 @@
 /**
- * Created by hisign on 2017/5/19.
  * Function:存放常用颜色值
  * Desc:
  */

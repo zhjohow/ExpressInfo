@@ -1,5 +1,4 @@
 /**
- * Created by hisign on 2017/5/19.
  * 全局样式
  */
 import {

@@ -1,6 +1,5 @@
 /**
  * 输入备注
- * @hisign
  * **/
 import React, {Component} from "react";
 import {Modal, StyleSheet, Text, TextInput, TouchableOpacity, View} from "react-native";

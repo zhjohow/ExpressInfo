@@ -1,5 +1,4 @@
 /**
- * Created by hisign on 2017/4/13
  * Function:扫描
  * Desc:
  */

@@ -1,5 +1,4 @@
 /**
- * Created by hisign on 2017/5/25.
  * 根据运单号和快递公司编码查询快递轨迹
  */
 import React from "react";
