@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+
 export  var
     hexcase = 0;
 /* hex output format. 0 - lowercase; 1 - uppercase        */

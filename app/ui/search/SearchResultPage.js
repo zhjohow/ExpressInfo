@@ -1,5 +1,5 @@
 /**
- * Created by hisign on 2017/5/24.
+ * 
  * 搜索结果
  */
 import React, {Component} from "react";

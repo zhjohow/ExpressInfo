@@ -1,6 +1,4 @@
-/**
- * Created by hisign on 2017/5/24.
- */
+
 import React, {Component} from "react";
 import {View, WebView} from "react-native";
 import NavigationBar from "../common/NavigationBar";

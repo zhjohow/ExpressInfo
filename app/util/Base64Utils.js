@@ -1,7 +1,3 @@
-/**
- * Created by hisign on 2017/5/23.
- */
-import React, {Component} from "react";
 export  var _keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
 export default class Base64Utils {
     constructor() {

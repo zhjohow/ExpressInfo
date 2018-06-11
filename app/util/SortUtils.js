@@ -1,6 +1,4 @@
-/**
- * Created by hisign on 2017/5/22.
- */
+
 export default class SortUtils {
     constructor() {
     }

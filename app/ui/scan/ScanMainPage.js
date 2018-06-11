@@ -1,5 +1,5 @@
 /**
- * Created by hisign on 2017/5/19.
+ * 
  * 扫码主界面
  */
 import React, {Component} from "react";
