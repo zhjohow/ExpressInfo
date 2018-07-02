@@ -56,7 +56,7 @@ const constants = {
     //
     ExitTip:'再按一次退出应用',
     //分享标题
-    ShareTitle:'易快递',
+    ShareTitle:'ExpressInfo',
     //分享内容
     ShareContent:'一款用ReactNative开发的跨平台app，值得一看',
     //分享下载链接

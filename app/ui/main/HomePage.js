@@ -11,9 +11,7 @@ import {
     View
 } from "react-native";
 import NavigationBar from "../../common/NavigationBar";
-import Toast from "react-native-easy-toast";
 import ViewUtils from "../../util/ViewUtils";
-import JAdView from "./JAdView";
 import Swipeout from "react-native-swipeout";
 import WebViewPage from "../WebViewPage";
 import SearchMainPage from "../search/SearchMainPage";
@@ -25,8 +23,7 @@ import Constants from "../../res/Constants";
 import TracesDataDao from "../../dao/TracesDataDao";
 import HistorySearchDao from "../../dao/HistorySearchDao";
 import CompanyModel from "../../model/CompanyModel";
-import MoreMenu, {MORE_MENU} from "../../common/MoreMenu";
-import CustomThemePage from "../about/CustomThemePage";
+
 var tracesDataDao = new TracesDataDao();
 var historySearchDao = new HistorySearchDao();
 
@@ -70,15 +67,12 @@ export default class HomePage extends Component {
                     title='快递信息'
                     style={this.state.theme.styles.navBar}
                     statusBar={{backgroundColor: this.state.theme.themeColor}}
-                    rightButton={this._renderRightView()}
                     hide={false}
                 />
                 {/*菜单*/}
                 {this._renderMenuView()}
                 {/*内容*/}
                 {contentView}
-                {/*更多菜单*/}
-                {this._renderMoreView()}
             </View>
         );
     }
@@ -121,11 +115,6 @@ export default class HomePage extends Component {
         return true;
     }
 
-    _renderRightView() {
-        return ViewUtils.getMoreButton(() => {
-            this.refs.moreMenu.open()
-        })
-    }
 
     _renderMenuView() {
         return <View style={[styles.menuContainerStyles, this.state.theme.styles.navBar]}>
@@ -144,22 +133,6 @@ export default class HomePage extends Component {
                 <Text style={styles.menuFontStyles}>扫码</Text>
             </TouchableOpacity>
         </View>
-    }
-
-    _renderMoreView() {
-        let params = {...this.props, theme: this.state.theme}
-        return <MoreMenu
-            {...params}
-            ref="moreMenu"
-            menus={[MORE_MENU.Custom_Theme, MORE_MENU.About_Author, MORE_MENU.Share]}
-            contentStyle={{right: 20}}
-            onMoreMenuSelect={(e) => {
-                if (e === MORE_MENU.Custom_Theme) {
-                    this.setState({customThemeViewVisible: true});
-                }
-            }}
-            anchorView={this.refs.moreMenuButton}
-            navigator={this.props.navigator}/>
     }
 
     renderRow(rowData, sectionId, rowID) {

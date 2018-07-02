@@ -5,11 +5,8 @@
 import React, {Component, PropTypes} from "react";
 import {Share, Text, TouchableHighlight, View,Platform} from "react-native";
 import Popover from "../common/Popover";
-import AboutMePage from "../ui/about/AboutMePage";
 import Constants from "../res/Constants";
 export const MORE_MENU = {
-    Custom_Theme: '自定义主题',
-    About_Author: '关于作者',
     Share: '分享'
 }
 
@@ -55,9 +52,6 @@ export default class MoreMenu extends Component {
         let TargetComponent, params = {...this.props, menuType: tab};
         switch (tab) {
             case MORE_MENU.Custom_Theme:
-                break;
-            case MORE_MENU.About_Author:
-                TargetComponent = AboutMePage;
                 break;
             case MORE_MENU.Share:
                 this.onShare();

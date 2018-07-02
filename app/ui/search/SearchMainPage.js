@@ -15,7 +15,7 @@ import CompanyPage from "./CompanyPage";
 import SearchResultPage from "./SearchResultPage";
 import QRScannerPage from "../scan/QRScannerPage";
 import TracesDataDao from "../../dao/TracesDataDao";
-var allCompanyDatas = require('../../../LocalData/CompanyData.json');
+var allCompanyDatas = require('../../data/CompanyData.json');
 var tracesDataDao = new TracesDataDao();
 
 export default class SearchMainPage extends Component {

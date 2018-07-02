@@ -5,7 +5,6 @@ import React, {Component} from "react";
 import Constants from "../res/Constants";
 import ThemeFactory,{ThemeFlags} from '../res/styles/ThemeFactory';
 import moment from "moment";
-import Colors from '../res/Colors';
 export default class HistorySearchDao {
     constructor() {
     }

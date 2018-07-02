@@ -11,7 +11,7 @@ import BaseCommon from "../../common/BaseCommon";
 import CompanyModel from "../../model/CompanyModel";
 import SearchResultPage from "./SearchResultPage";
 
-var Companys = require('../../../LocalData/CompanyData.json');
+var Companys = require('../../data/CompanyData.json');
 
 export default class CompanyPage extends Component {
 
