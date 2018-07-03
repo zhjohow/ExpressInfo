@@ -20,7 +20,7 @@ const constants = {
     /**
      * 快递公司客户电话html
      */
-     ExpressPhoneURL:"http://wap.guoguo-app.com/cpCompany.htm?type=10",
+     ExpressPhoneURL:"https://m.guoguo-app.com/cpCompany.htm",
     /**
      * 保存到本地的，搜索快递记录key
      */
@@ -55,12 +55,7 @@ const constants = {
     NoHistoryRecord:'NoHistoryRecord',
     //
     ExitTip:'再按一次退出应用',
-    //分享标题
-    ShareTitle:'ExpressInfo',
-    //分享内容
-    ShareContent:'一款用ReactNative开发的跨平台app，值得一看',
-    //分享下载链接
-    ShareUrl:'https://fir.im/zhjh',
+
 }
 
 export default constants;

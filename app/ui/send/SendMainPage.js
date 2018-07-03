@@ -30,9 +30,10 @@ export default class SendMainPage extends Component {
     onBackPress(e) {
         if (this.state.canGoBack) {
             this.refs[WEBVIEW_REF].goBack();
+            return true;
         } else {
             this.props.navigator.pop();
-            return true;
+            return false;
         }
     }
 
